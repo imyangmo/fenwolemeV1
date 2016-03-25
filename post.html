@@ -1,0 +1,104 @@
+﻿<html xmlns:wb="http://open.weibo.com/wb">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>粉我了.么</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/footer.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/post.css">
+
+    <link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon/favicon-64x64.png" sizes="64x64">
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+<div class="wrap">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="http://ffxz.shiguang.us/">粉我了.么</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+
+          <form class="navbar-form navbar-right">
+            <div class="form-group">
+              <input placeholder="在此输入获取码" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-default">>></button>
+          </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="http://ffxz.shiguang.us/post.html">我要发布</a></li>
+                <li><a href="#">我要下载</a></li>
+            </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+    <!-- login -->
+    <div class="col-md-4 borderdone" id="step1">
+        <div class="page-header">
+            <h1>第一步:登陆</br><small>登陆你需要被关注的账号</small></h1>
+        </div>
+        <div id="stepone">
+            <button class="btn btn-default" type="button" id="wb_login">登录微博</button>
+            <button class="btn btn-default disabled" type="button" id="wb_logindone" style="display:none">已经登陆</button>
+        </div>
+    </div>
+    <!-- check -->
+    <div class="col-md-4" id="step2">
+        <div class="page-header">
+            <h1>第二步:设定</br><small>粘贴文件的下载链接</small></h1>
+        </div>
+        <div id="steptwo">
+                <div class="form-group">
+                    <label for="title">标题</label>
+                    <input type="text" class="form-control" id="title" placeholder="用于显示的标题">
+                </div>
+                <div class="form-group">
+                    <label for="dlurl">文件的下载地址</label>
+                    <input type="text" class="form-control" id="dlurl" placeholder="下载地址">
+                </div>
+                <p>确认后点击确定按钮获取链接</p>
+                <button id="postbtn" class="btn btn-default" onclick="posts()">确定</button>
+                <button id="postbtndone" class="btn btn-default disabled" style="display:none">已经提交</button>
+        </div>
+    </div>
+    <!-- getting -->
+    <div class="col-md-4" id="step3">
+        <div class="page-header">
+            <h1>第三步:获取</br><small>复制 粉我了.么 的地址</small></h1>
+        </div>
+        <div id="stepthree">
+            <input id="finalurl" class="form-control input-lg" type="text" placeholder="生成链接将会在此显示">
+        </div>
+    </div>
+</div>
+</div>
+<div class="footer">
+        <p><a href="www.shiguang.us">时光实验室</a> | 时光 with us. <br>粤ICP备15059469号-1</p>
+</div>
+<!--=============================HTML ENDING ======================================-->
+
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=366366808&debug=true" type="text/javascript" charset="utf-8"></script>
+<script src="js/post.js"></script>
+<script src="js/tota11y.min.js"></script>
+</body>
+</html>

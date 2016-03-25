@@ -1,0 +1,23 @@
+body {
+    height: 100%;
+    padding-top: 65px;
+}
+h1 {
+	text-align: center;
+}
+.borderdone {
+    border:1px solid #18BC9C;
+    height: 80%;
+    box-shadow: 0 0 10px #9ecaed;
+    border-radius: 7px;
+}
+/* 将按钮等元素居中需要父级元素文字居中 */
+.pullmiddle {
+	margin: auto;
+}
+.pullmiddlefather {
+	text-align: center;
+}
+.textboxwidth {
+	width: 100%;
+}

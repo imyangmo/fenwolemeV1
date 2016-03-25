@@ -1,0 +1,10 @@
+body {
+    height: 100%;
+    padding-top: 65px;
+}
+.borderdone {
+    border:1px solid #18BC9C;
+    height: 80%;
+    box-shadow: 0 0 10px #9ecaed;
+    border-radius: 7px;
+}

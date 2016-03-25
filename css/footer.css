@@ -1,0 +1,16 @@
+html,body {
+    height: 100%;
+}
+.wrap {
+    min-height: 100%;
+}
+.footer{
+    height: 50px;
+    margin: -50px auto 0;
+    background-color: #18BC9C;
+}
+.footer p {
+    line-height:20px;
+    text-align: center;
+}
+.footer a:link {color: white;}
